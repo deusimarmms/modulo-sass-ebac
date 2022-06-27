@@ -1,0 +1,41 @@
+.header-bg{
+    background-color: #000;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a:hover::after{
+   width: 100%;
+}
+
+.header-menu a{
+    display: inline-block;
+    padding: 16px 0;
+    color: #fff;
+    font-size: 1.125rem;
+    position: relative;
+}
+
+.header-menu a:after{
+    position: absolute;
+    content: '';
+    transition: 0.3s;
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+}
