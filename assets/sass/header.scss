@@ -1,5 +1,6 @@
+
 .header-bg{
-    background-color: #000;
+    background-color: $color-12;
 }
 .header{
     display: flex;
@@ -20,12 +21,13 @@
 
 .header-menu a:hover::after{
    width: 100%;
+   cursor: pointer;
 }
 
 .header-menu a{
     display: inline-block;
     padding: 16px 0;
-    color: #fff;
+     color: $color-white; 
     font-size: 1.125rem;
     position: relative;
 }
@@ -37,5 +39,5 @@
     display: block;
     height: 2px;
     width: 0;
-    background-color: #fff;
+   background-color:  $color-white;
 }
