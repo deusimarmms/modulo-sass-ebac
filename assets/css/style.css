@@ -3,6 +3,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2, h3, h4, h5, ul, p {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -11,8 +20,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
+/* Cores tons de cinza */
+/* Cores Primarias */
 @media (max-width: 800px) {
   .header-menu {
     gap: 20px;
@@ -66,6 +78,7 @@ a {
 
 .header-menu a:hover::after {
   width: 100%;
+  cursor: pointer;
 }
 
 .header-menu a {
@@ -84,6 +97,59 @@ a {
   height: 2px;
   width: 0;
   background-color: #fff;
+}
+
+.introducao-bg {
+  background-color: #000;
+  color: #fff;
+}
+
+.introducao {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 4rem;
+  line-height: 1.125;
+}
+.introducao h1 span {
+  color: #FFBB00;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+.introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 1.125;
+  line-height: 1.33;
+  font-weight: bold;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
