@@ -1,3 +1,4 @@
+/* HEADER */
 @media(max-width:800px){
     .header-menu{
         gap: 20px;
@@ -9,6 +10,12 @@
     }
     .header-menu a:hover{
         background: $color-10;
+    }
+    @media (max-width:600px) {
+        .introducao a{
+            padding: 12px 16px !important;
+            font-size: 16px !important;
+        }
     }
     .header-menu a::after{
         display: none;
@@ -22,5 +29,39 @@
         padding: 8px 12px;
         font-size: 0.875rem;
         
+    }
+}
+/* FIM HEADER */
+
+/* CONTEUDO */
+@media (max-width:1200px) {
+    .introducao h1{
+        font-size: 48px !important;
+    }
+    .introducao p{
+        font-size: 18px !important;
+    }
+}
+@media (max-width:800px) {
+    .introducao-bg{
+        background: $color-11 !important;
+        padding-top: 40px;
+        box-shadow: inset 0 -60px #fff;
+    }
+    .introducao{
+        grid-template-columns: 1fr !important;
+        gap: 32 !important;
+    }
+    .introducao-conteudo{
+        /* OBS */
+        padding-bottom: 40px !important;
+    }
+    .introducao h1{
+        font-size: 32px !important;
+        margin-bottom: 16px !important;
+    }
+    .introducao img{
+        height: 300px !important;
+        width: 100%;
     }
 }
